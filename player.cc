@@ -53,7 +53,8 @@ void Player::addDef(int amount){
 void Player::attack(Character *e){ // Character *e is an Enemy ptr
     int Damage = ceiling((100/(100+e->getDef()))⇤Atk);
     istringstream ss{Damage};
-    if(HP-Damage>0){
+    int newHP = HP-Damage;
+    if(newHP>0){
         e->setHP(newHP);
         action = "PC deals " + ss.str() +" damage to" + e->race;
     }
@@ -104,10 +105,6 @@ void Player::changepos(string direction){
 }
 
 void Player::moveChar(string direction){
-    
-}
-
-void Player::notifyEnemy(){
     
 }
 
@@ -188,8 +185,14 @@ void Player::useGold(Gold *g){ // no merchant hoard
     
 }
 
-void Player::renew()
-
-void Player::notify()
+void Player::renew(){
+    
+}
+void Player::notifyEnemy(){
+    
+}
+void Player::notify(){
+    
+}
 
 
