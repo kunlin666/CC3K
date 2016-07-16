@@ -6,11 +6,10 @@ class Gold: public Item {
    int quantity;
    bool pickable;
   public:
-   Gold(int row, int col, string type, char symbol, int index, int quantity, bool pickable);
+   Gold(int quantity);
    ~Gold() override;
    int getQuantity();
    bool isPickable();
-   void setQuantity(int num);
    void setPickable(bool pick);
 }
 
