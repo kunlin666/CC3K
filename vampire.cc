@@ -1,0 +1,2 @@
+
+#include "vampire.h"
